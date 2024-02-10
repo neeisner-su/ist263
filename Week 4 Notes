@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Notes</title>
+        <style>
+            td, th border: 1px solid black
+
+
+
+<html lang="en>"
+    <body>
+        <h1>Tables and Forms Day
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+            </tr>
+        </table>
+    <h2>Forms</h2>
+    <form actions="" method="post">
+        <label actions="" method="post">
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="Special Instructions">Special Instructions:</label><br>
+            <textarea id="specialinstructions"name= "special instructions" rows="3" cols="60"></textarea>
+            <p>Delivery Instructions:</p>
+            <input type="radio" id=
+         </form>
+    </body>
+</html>
