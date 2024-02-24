@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked Stylesheet</title>
+    <link rel="Stylesheet" href="w6tyles.css">
+</head>
+<body>
+    <h1>Linked Style Page</h1>
+    <a href="http://www.amazon.com" id="amazonlink">Amazon</a>
+    <p>Lorem <a href="https://www.google.com">Google</a> ipsum dolor sit amet consectetur adipisicing elit. Architecto ea ipsa iusto voluptatem excepturi facere delectus fugit, similique placeat dolore eos quisquam, fuga nihil rerum illo corrupti sit quos commodi!</p>
+    <!--class attributes can have the same value more than once-->
+    <p class="fcolor">Feature 1</p>
+    <p class="fcolor">Feature 2</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Embedded</title>
+</head>
+<body>
+    <h1>First CSS Page</h1>
+    <h2>Changing Fonts</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur iusto perspiciatis blanditiis! Consequatur non debitis voluptates perferendis repellat incidunt quibusdam laudantium possimus, reiciendis harum laboriosam nesciunt! Ipsam dolore quae assumenda.</p>
+    <h2>Changing Colors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur eius labore, alias sint dignissimos. Voluptatibus deserunt earum sapiente. Eligendi quas in quae adipisci recusandae quisquam ea sed. Hic, voluptatum!</p>
+</body>
+</html>
+

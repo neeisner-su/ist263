@@ -1,0 +1,28 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+}
+.special {color: pink}
+
+/* table styles */
+/* Style for all rows */
+tr {
+    background-color: white; 
+}
+  
+  /* Style for even rows */
+.evenrow {
+    background-color: paleturquoise; 
+}
+
+/* font sizes */
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
