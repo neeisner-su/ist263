@@ -8,18 +8,14 @@ h1, h2 {
 }
 .special {color: pink}
 
-/* table styles */
-/* Style for all rows */
 tr {
     background-color: white; 
 }
   
-  /* Style for even rows */
 .evenrow {
     background-color: paleturquoise; 
 }
 
-/* font sizes */
 h1 {
     font-size: 3em;
 }
