@@ -1,0 +1,24 @@
+h1 {color: #BC0950;
+}
+h2 {
+    color: #D16A92;
+}
+a {
+    color: #BC0950;
+}
+nav { background-color: #FFFFFF;
+}
+nav a {color: #D16A92;
+}
+nav a:hover {background-color:#BEA894 ;
+}
+nav{ padding: 10px;
+}
+nav{margin-bottom: 30px;
+}
+body {background-color:#BEA894;
+     color:	#000000 ;
+}   
+table, th, td {
+    border: 1px solid #000000;
+}
