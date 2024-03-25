@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <title>Front End Web Development</title> 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/6026ef0b86.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -50,20 +51,49 @@
     </aside>
 -->
 
-    <div class="flex-container">
-        <div class="skills-with-icons">
-            <div class="flex-row">
-                <style>
-                    .flex-row {
-                        display: flex;
-                    }
-                </style>
-            <div><i class="fa-thin fa-file-spreadsheet"></i><br>Excel</div>
-            <div><i class="fa-thin fa-billboard"></i><br>Marketing</div>
-            <div><i class="fa-sharp fa-thin fa-photo-film-music"></i><br>Social Media</div>
-            <div><i class="fa-thin fa-flux-capacitor"></i><br>UX Design</div>
-            <div><i class="fa-thin fa-file-word"></i><br>Microsoft Word</div>
-        </div>
+<style>
+    .flex-container {
+      display: flex;
+      justify-content: space-between; /* This can be adjusted or removed based on the desired spacing */
+    }
+    .flex-item {
+     width: 90%; /* this is the width of the entire box */
+      padding: 10px;
+    
+      box-sizing: border-box; /* Ensures padding and border are included in the width */
+    }
+    .flex-item.left {
+      width: 75%; /* Larger column */
+      display: flex;
+      flex-direction: row;
+    }
+    .flex-item.right {
+      width: 25%; /* Smaller column */
+    }
+    .flex-column {
+        display: flex;
+        flex-direction: column; /* If you want the icon and text stacked */
+        flex: 1; /* Makes each column take equal space */
+        justify-content: center; /* Center the icons horizontally */
+        align-items: center; /* Center content vertically within each column */
+        text-align: center; /* Ensures text is centered under icons */
+    }
+  </style>
+
+<div class="flex-container">
+    
+    <div class="flex-item left">
+
+       
+        <div class="flex-column"><i class="fa-regular fa-file-excel"></i><br>Excel</div>
+        <div class="flex-column"><i class="fa-solid fa-clipboard"></i><br>Marketing</div>
+        <div class="flex-column"><i class="fa-solid fa-image"></i><br>Social Media</div>
+        <div class="flex-column"><i class="fa-solid fa-computer"></i><br>UX Design</div>
+        <div class="flex-column"><i class="fa-solid fa-window-maximize"></i><br>Microsoft Word</div>
+
+
+    </div>
+    <div class="flex-item right">
         <div class="aside-skills">
             <aside class="sidebar">
                 <h2>Other Skills</h2>
@@ -91,7 +121,20 @@
                 </ul>
             </aside>
     </div>
+
+
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
  <!-- 
     <table>
