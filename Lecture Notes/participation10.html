@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #size {
+        font-size: 2em;
+        transition: font-size 0.5s;
+    }
+    @media (min-width: 801px) {
+        #size::before {
+            content: "I'm large.";
+        }
+    }
+    @media (max-width: 800px) {
+        #size: ::before {
+            content: "I'm small."
+        }
+    }
+</style>
+<body>
+    <div id="size"></div>
+</body>
+</html>
