@@ -22,7 +22,6 @@ body {background-color:#BEA894;
 table, th, td {
     border: 1px solid #000000;
 }
-img.responsive {
+.img1 {
     max-width: 100%;
-    height: auto;
 }
