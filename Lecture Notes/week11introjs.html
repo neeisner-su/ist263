@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript Program</title>
+    <style>
+        h1 {cursor: pointer;}
+    </style>
+    <script>
+        function clicky () {
+        alert("Hello World"); /*need to end js w a semi colon, this will show up as an alert box*/
+        }
+        function another () {
+            alert("Second Message");
+        }
+        function loady () {
+            alert("Page Load");
+        }
+    </script>
+</head>
+<body onload="loady();">
+    <h1 onclick="clicky();">Welcome to JavaScript</h1>
+    <p onmousemove="another();">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptatibus, modi obcaecati voluptatem similique placeat, voluptate ut veritatis aliquam tempore possimus laudantium eaque delectus autem odit ratione, deleniti at laborum.</p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html, main {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        align-self: flex-start;
+    }
+    main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    form {
+        line-height: 2.5;
+    }
+    .image-container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       max-width: 800px;
+       margin: auto;
+    }
+    .image-container .left-image img {
+        width: 80px;
+        height: auto;
+    }
+    .image-container .right-image img {
+        width: 80px;
+        height: auto;
+    }
+    .central-image {
+        width: 200px;
+        height: auto;
+        margin: 0 20px;
+    }
+    p {
+        text-align: center;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <nav>
+        <a href="homepage.html">Home</a><span class="nav-separator"> | </span>
+        <a href="europeanfashion.html">European Fashion</a><span class="nav-separator"> | </span>
+        <a href="contactme.html">Contact</a>
+    </nav>
+    <main>
+        <h1>About Me</h1>
+        <div class="image-container">
+            <a href="http://www.linkedin.com/in/nicole-eisner" target="_blank" class="left-image">
+            <img src="logo-sized.png" alt="LinkedIn Profile">
+        </a>
+        <img src="contactimage.jpg" alt="Central Image" class="central-image"><br>
+        <a href="https://www.instagram.com/nicoleeisner/" target="_blank" class="right-image">
+            <img src="instagram.png" width="80" alt="Instagram Profile">
+        </a>
+        </div>
+<p>
+    Hi! My name is Nicole Eisner, and I am so excited to share my page with you!<br>
+
+    <br>I am currently a senior at Syracuse University studying Marketing Management and minoring in Information Technology and Design Startups. <br>
+
+    <br>Growing up in D.C and my family being from New York, fashion has always been a huge interest of mine ever since I was a little girl. It is not just about the clothes I wear, but is allows me to reflect my identity, mood, aspirations, and my personal-self-expression. Fashion is my way of keeping myself engaged and allows me to push my own boundaries and challenge norms.<br>
+
+    <br>In 2023, I was fortunate enough to have the amazing opportunity to study abroad in Florence; Italy being one of the fashion capitals of the world. Through this experience, I was able to take some inspiring fashion classes and really whiteness firsthand European fashion trends.<br>
+
+    <br>It being my first time in Europe, I struggled with finding outfits that would allow me to not only fit in, but to also express myself in my own ways. Through following influencers and paying attention to how others around me dress, I learned a lot about fashion and how clothes really allow me to show my values and belong to a community.<br>
+
+    <br>I made this page to share some of my favorite outfits I wore in Europe will studying abroad and to make the “searching for clothes process” a little bit easier. You will find some of my favorite European fashion trends as well as some of the many influencers I followed and watched during my time in Italy!<br>
+
+</p>
+
+
+    <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/xkndjlel" method="post">  
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="affiliation">What is your affiliation?</label><br>
+            <label for="affiliation1">Friend</label>
+            <input type="radio" id="friend" name="friend" value="option 1">
+            <label for="affiliation2">Abroad Student</label>
+            <input type="radio" id="abroad student" name="abroad student" value="option 2">
+            <label for="affiliation3">Organization</label>
+            <input type="radio" id="organization" name="organization" value="option 3">
+            <label for="affiliation4">Other</label>
+            <input type="radio" id="schoolOther" name="school" value="option 4"><br>
+            <label for="email/phone">Enter email or phone number</label>
+            <input type="text" name="emailorphone" id="emailorphone"><br>
+            <label for="comment">What are you inquiring about?</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+            <button type="submit">Send</button>     
+        </form>
+    </main>
+    </nav>
+</body>
+<footer>
+    <hr> 
+    <span>Nicole Eisner</span> &copy; 2024
+</footer>
+</html>
