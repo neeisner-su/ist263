@@ -1,14 +1,14 @@
-h1 {color: #BC0950;
+h1 {color:  #ff3385;
 }
 h2 {
-    color: #D16A92;
+    color: #ff99c2;
 }
 a {
     color: #BC0950;
 }
 nav { background-color: #FFFFFF;
 }
-nav a {color: #D16A92;
+nav a {color: #ff99c2;
 }
 nav a:hover {background-color:#BEA894 ;
 }
