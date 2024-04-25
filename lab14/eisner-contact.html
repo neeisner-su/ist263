@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            .skip {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: wavy;
+            border: 1px solid #ffa500;
+            position: absolute;
+            top: 10px;
+            left: -999px; /*push off left side of browser */
+        }
+        .skip:focus {
+            left: 10px;
+        }
+            h1{
+                text-align: center;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+        <h1>Contact</h1>
+        <style>
+        .container {
+            display: flex; /* This makes box1 and box2 flex items */
+            justify-content: space-between; /* Adjusts the space between the flex items */
+        }
+        .box1, .box2, .box3 {
+            margin: 15px;
+            background-color: #ffffff;
+            border-radius: 1em;
+            padding: 5px;
+        }
+        .box1, .box2 {
+            flex: 1; /* Allows box1 and box2 to grow and take up equal space */
+        }
+        .box3 {
+            display: flex; /* If you want the contents of box3 to be flex items */
+            flex: 1; /* Adjust as needed */
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#skip" class="skip" tabindex="4">Skip to Content</a><br>
+            <a href="index.html">Bio</a><span class="nav-separator">|</span> 
+            <a href="eisner-skills.html">Skills</a><span class="nav-separator">|</span>
+            <a href="eisner-contact.html">Contact</a>
+        </nav>
+        <div class="container">
+            <div class="box1"> 
+                <a>Nicole Eisner</a>
+                <address>402 Nature Lane, Rockville MD, 20850</address>
+            </div>
+            <div class="box2">
+                <p>
+                    <a href="http://www.linkedin.com/in/nicole-eisner" alt="Linkedln Profile">Linkedln Profile</a>
+                    <a href="http://www.linkedin.com/in/nicole-eisner"><img src="logo-sized.png" alt="Linkedln Profile"></a>
+                </p>
+                <p>
+                    <a href="mailto:nicoleeisner101@gmail.com">nicoleeisner101@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="box3">
+            <div id="skip">
+                <form action="https://formspree.io/f/xkndjlel" method="post">  
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname"><br>
+                    <label for="school">What School do you attend?</label>
+                    <input type="text" name="school" id="school"><br>
+                    <label for="schoolSyracuse">Syracuse</label>
+                    <input type="radio" id="schoolSyracuse" name="school" value="Syracuse">
+                    <label for="schoolOther">Other</label>
+                    <input type="radio" id="schoolOther" name="school" value="Other"><br>
+        
+                    <label for="student">Are you a student?</label>
+                    <input type="checkbox" id="student" name="student" value="Yes"><br>
+                    <label for="veteran">Are you a veteran?</label>
+                    <input type="checkbox" id="veteran" name="veteran" value="Yes"><br>
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50"> 
+                        Please enter a value
+                    </textarea> <br>
+                    <button type="submit">Send</button>     
+                </form>
+            </div>
+            <div style="margin-left: 25px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1523514154987!2d-76.1355620494741!3d43.03822589989456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1663088915712!5m2!1sen!2sus" alt="Map with location of Syracuse iSchool"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
+
