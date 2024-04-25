@@ -1,0 +1,9 @@
+nav {
+    border: 2px solid pink;
+    background-color: pink;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
