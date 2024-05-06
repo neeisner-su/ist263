@@ -1,9 +1,55 @@
+h1 { color: #001861;
+    }
+h2 {
+    color:#001861
+}
+h3 {
+    color: #ff748c;
+}
+.skip {
+    background-color: #001861;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: wavy;
+    border: 1px solid #ff748c;
+    position: absolute;
+    top: 10px;
+    left: -999px; /*push off left side of browser */
+}
+.skip:focus {
+    left: 10px;
+}
 nav {
-    border: 2px solid pink;
-    background-color: pink;
+    border: 3px solid #ff748c;
+    background-color: #ff748c;
     color: white;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
+    font-size: 22px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover {
+    color: #001861;
+}
+
+@media only screen and (max-width: 800px) {
+    a {display: block;} /* change links to block. that makes them take up full width */
+    #navlinks {display: none;}
+    .row {display: flex; justify-content: space-between;}
+}
+body {
+    background-color: #e5e4e2;
+}
+
+hr {
+    border-color:  1px solid #001861;
+}
+a {
+    color: #001861;
 }

@@ -32,7 +32,12 @@
          }
        
      </style>
-     <script>
+       <script>
+    function VenusOn () {
+                document.getElementById('venus').style.display = 'block';
+                document.getElementById('venusinfo').style.display ='block'
+            }
+          
             function PlanetsOff () {
                 document.getElementById('mercury').style.display = 'none';
                 document.getElementById('venus').style.display = 'none';
@@ -55,10 +60,7 @@
                 document.getElementById('mercury').style.display = 'block';
                 document.getElementById('mercuryinfo').style.display ='block'
             }
-            function VenusOn () {
-                document.getElementById('venus').style.display = 'block';
-                document.getElementById('venusinfo').style.display ='block'
-            }
+        
             function EarthOn () {
                 document.getElementById('earth').style.display = 'block';
                 document.getElementById('earthinfo').style.display ='block'

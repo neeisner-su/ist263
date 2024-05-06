@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #e5e4e2;
+            color: black;
+        }
+        #slideshow-container {
+            background-color: #e5e4e2;
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+        #bigimages {margin-right: 100px;}
+        #textinfo {padding: 100px;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+        /* ^^ margin auto is centering this container */
+        #flothumb, #parthumb, #barthumb, #prathumb 
+        {width: 100px;}
+        #par, #bar, #pra, #parinfo, #barinfo, #prainfo { display: none;}
+        #bigimages {
+           float: left;
+        }
+        #thumbnails {
+           clear: both;
+        }
+      
+    </style>
+    <script>
+        function POff () {
+            document.getElementById('flo').style.display = 'none';
+            document.getElementById('par').style.display = 'none';
+            document.getElementById('bar').style.display = 'none';
+            document.getElementById('pra').style.display = 'none';
+            document.getElementById('floinfo').style.display = 'none';
+            document.getElementById('parinfo').style.display = 'none';
+            document.getElementById('barinfo').style.display = 'none';
+            document.getElementById('prainfo').style.display = 'none';
+        }
+        function FloOn () {
+            document.getElementById('flo').style.display = 'block';
+            document.getElementById('floinfo').style.display ='block'
+        }
+        function ParOn () {
+            document.getElementById('par').style.display = 'block';
+            document.getElementById('parinfo').style.display ='block'
+        }
+        function BarOn () {
+            document.getElementById('bar').style.display = 'block';
+            document.getElementById('barinfo').style.display ='block'
+        }
+        function PraOn () {
+            document.getElementById('pra').style.display = 'block';
+            document.getElementById('prainfo').style.display ='block'
+        }
+ </script>
+<div id="slideshow-container">
+    <div id="bigimages">
+        <img src="florence.jpg" width="150" alt="flo" id="flo">
+        <img src="paris.JPG" width="150" alt="par" if="par">
+        <img src="barcelona.jpg" width="150" alt="bar" id="bar">
+        <img src="prague.jpg" width="150" alt="pra" id="pra">
+    </div>
+    <div id="textinfo">
+        <div id="floinfo">
+            <h2><strong>Florence</strong></h2>
+             <p>Florence is considered the birthplace of Italian fashion. It is a key fashion capital of the world and known for its leather goods, luxury designers, and jewelry. People tend to dress smart casual a lot using quality fabrics and fashionable shoes like boots or loafers.  Leather is huge in Florence, and people love to wear leather jackets, pants, and also leather bags. During the summer people tend to wear more vibrant colors, and in the winter, they tend to wear stylish coats, scarves, and boots. Accessories are huge in Florence. Simple but elegant pieces like sunglasses or fun jewelry complement each outfit and really give you a touch of personality. You will really never see individuals walking around in comfort clothing like sweatpants; everyone loves to be put together and to embrace modern style.</p>
+        </div>
+        <div id="parinfo">
+            <h2><strong>Paris</strong></h2>
+          <p>Paris has been a forefront of fashion since the 17th century. Paris fashion week is one of the most prestigious events in the industry attracting designers, celebrities, what and media around the whole world. While I was visiting Paris, I wore my most “put together” looks.  What I noticed the most was that people like to dress with “understated elegance”. They don’t tend to wear super flashy outfits, but they really focus on the quality, fit, and fabric of them. People wear neutral colors and have tailored fits where everything fits perfectly and doesn’t look too big. Loafers, ballet flats, ankle boots, and sleek sneakers are very popular as well as accessories like elegant watches. All casual outfits are very polished but that is typically common around all of Europe.</p>
+        </div>
+        <div id="barinfo">
+            <h2><strong>Barcelona</strong></h2>
+          <p>Barcelona is a very vibrant culture with an artistic heritage. People tend to dress in a relaxed and stylish look prioritizing comfort over style often. They dress in more colorful clothes opposed to neutral colors embracing a mix of a traditional and modern look. They also tend to wear bold patterns and print. During the day, you typically see people wearing jeans, t-shirts, or casual dresses. People also wear lightweight jackets and scarves depending on the time of year. Comfortable walking shoes like sneakers and sandals are most desirable. During the nighttime people will dress up a bit more wearing stylish tops or dresses offering a more glamourous look.</p>
+        </div>
+        <div id="prainfo">
+            <h2><strong>Prague</strong></h2>
+            <p>Prague’s blend of traditional eastern Europe and modern global trends reflect the style of how individuals dress there. It is also one of my favorite cities in the world! People like to dress more conservative creating a sophisticated look. During the day, people wear smart-casual outfits like jeans, t-shirts and sweaters, but nothing really revealing. It can get really cold there during winter seasons so I recommend wearing a stylish yet functional jacket like a trench coat. Hats and gloves are important to bring because not only do they keep you warm, but they serve as fashionable accessories and additions for outfits. There is still plenty of room for personal expression, but this recommendations will definitely help you feel more comfortable in Prague!</p>
+        </div>
+    </div>
+    <div id="thumbnails">
+        <img src="florence.jpg" alt="flo" id="flothumb" onclick="POff(); FloOn();">
+        <img src="paris.JPG" alt="par" id="parthumb" onclick="POff(); ParOn();">
+        <img src="barcelona.jpg" alt="bar" id="barthumb" onclick="POff(); BarOn();">
+        <img src="prague.jpg" alt="pra" id="prathumb" onclick="POff(); PraOn();">
+    </div>
+</div>
+</body>
+</html>
+
+
+

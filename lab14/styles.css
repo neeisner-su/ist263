@@ -7,8 +7,10 @@ a {
     color: #BC0950;
 }
 nav { background-color: #FFFFFF;
+    gap: 20px;
 }
 nav a {color: #8c1aff;
+    text-decoration: none;
 }
 nav a:hover {background-color:#BEA894 ;
 }
@@ -16,6 +18,19 @@ nav{ padding: 10px;
 }
 nav{margin-bottom: 30px;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: #BEA894;
+    z-index: 1;
+}
+
 body {background-color:#BEA894;
      color:	#000000 ;
 }   

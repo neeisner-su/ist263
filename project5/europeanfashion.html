@@ -4,41 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="finalstyles.css">
 </head>
+<style>
+  header {
+    text-align: center;
+  }
+  body {
+  margin-left: 20px;
+  margin-right: 20px;}
+    h1,h2{
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+    }   
+    h3 {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+    p {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; 
+  padding: 20px; 
+}
+
+.photo {
+  margin-right: 20px;  
+  flex: 1 1 20%;
+}
+
+.photo img {
+  min-width: 250px;
+  min-height: 250px; 
+  height: auto; 
+  border-radius: 15px;
+}
+
+.text {
+  flex: 3 1 70%;
+}
+
+@media (max-width: 768px) { 
+  .container {
+    flex-direction: column; 
+  }
+
+  .photo, .text {
+    flex: none; 
+    width: 100%; 
+    max-width: 100%; 
+    margin-right: 0; 
+  }
+
+  .text {
+    order: 2; 
+  }
+}
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-container{
+  text-align: center;
+  position: relative;
+}
+iframe {
+  width: 560px;
+  height: 315px;
+}
+</style>
 <body>
-    <nav>
-        <a href="homepage.html">Home</a><span class="nav-separator">|  </span>
-        <a href="europeanfashion.html">European Fashion</a><span class="nav-separator"> | </span>
-        <a href="contactme.html">Contact</a>
-    </nav>
-
-    <main>
-        <h1>European Fashion Guide</h1>
-        <h2>Florence</h2>
-        <img src="florence.jpg" width="150" alt="Florence">
-        <p>Florence is considered the birthplace of Italian fashion. It is a key fashion capital of the world and known for its leather goods, luxury designers, and jewelry. People tend to dress smart casual a lot using quality fabrics and fashionable shoes like boots or loafers.  Leather is huge in Florence, and people love to wear leather jackets, pants, and also leather bags. During the summer people tend to wear more vibrant colors, and in the winter, they tend to wear stylish coats, scarves, and boots. Accessories are huge in Florence. Simple but elegant pieces like sunglasses or fun jewelry complement each outfit and really give you a touch of personality. You will really never see individuals walking around in comfort clothing like sweatpants; everyone loves to be put together and to embrace modern style.</p>
-
-        <h2>Paris</h2>
-        <img src="paris.JPG" width="150" alt="Paris">
-        <p>Paris has been a forefront of fashion since the 17th century. Paris fashion week is one of the most prestigious events in the industry attracting designers, celebrities, what and media around the whole world. While I was visiting Paris, I wore my most “put together” looks.  What I noticed the most was that people like to dress with “understated elegance”. They don’t tend to wear super flashy outfits, but they really focus on the quality, fit, and fabric of them. People wear neutral colors and have tailored fits where everything fits perfectly and doesn’t look too big. Loafers, ballet flats, ankle boots, and sleek sneakers are very popular as well as accessories like elegant watches. All casual outfits are very polished but that is typically common around all of Europe.</p>
-
-        <h2>Barcelona</h2>
-        <img src="barcelona.jpg" width="150" alt="Barcelona">
-        <p>Barcelona is a very vibrant culture with an artistic heritage. People tend to dress in a relaxed and stylish look prioritizing comfort over style often. They dress in more colorful clothes opposed to neutral colors embracing a mix of a traditional and modern look. They also tend to wear bold patterns and print. During the day, you typically see people wearing jeans, t-shirts, or casual dresses. People also wear lightweight jackets and scarves depending on the time of year. Comfortable walking shoes like sneakers and sandals are most desirable. During the nighttime people will dress up a bit more wearing stylish tops or dresses offering a more glamourous look.</p>
-
-        <h2>Prague</h2>
-        <img src="prague.jpg" width="150" alt="Prague">
-        <p>Prague’s blend of traditional eastern Europe and modern global trends reflect the style of how individuals dress there. It is also one of my favorite cities in the world! People like to dress more conservative creating a sophisticated look. During the day, people wear smart-casual outfits like jeans, t-shirts and sweaters, but nothing really revealing. It can get really cold there during winter seasons so I recommend wearing a stylish yet functional jacket like a trench coat. Hats and gloves are important to bring because not only do they keep you warm, but they serve as fashionable accessories and additions for outfits. There is still plenty of room for personal expression, but this recommendations will definitely help you feel more comfortable in Prague!</p>
-
-       
-
-
-
-
-
-
-    </main>
+  <nav>
+      <a href="#skip" class="skip" tabindex="4">Skip to Content</a><br>
+      <a href="homepage.html">Home</a><span class="nav-separator"></span>
+      <a href="europeanfashion.html">European Fashion</a><span class="nav-separator"></span>
+      <a href="contactme.html">Contact</a>
+  </nav>
+</nav>
+<header>
+  <h1>European Fashion Guide</h1>
+</header>
+<!-- first row-->
+<div class="container">
+  <div class="photo">
+    <img src="florence.jpg" width= "150" alt="Photo of Florence">
+  </div>
+  <div class="text">
+      <h2><strong>Florence</strong></h2>
+      <p>Florence is considered the birthplace of Italian fashion. It is a key fashion capital of the world and known for its leather goods, luxury designers, and jewelry. People tend to dress smart casual a lot using quality fabrics and fashionable shoes like boots or loafers.  Leather is huge in Florence, and people love to wear leather jackets, pants, and also leather bags. During the summer people tend to wear more vibrant colors, and in the winter, they tend to wear stylish coats, scarves, and boots. Accessories are huge in Florence. Simple but elegant pieces like sunglasses or fun jewelry complement each outfit and really give you a touch of personality. You will really never see individuals walking around in comfort clothing like sweatpants; everyone loves to be put together and to embrace modern style.</p>
+  </div>
+</div>
+<hr>
+<!-- second row-->
+<div class="container">
+  <div class="photo">
+    <img src="paris.JPG" width= "150" alt="Photo of Paris">
+  </div>
+  <div class="text">
+      <h2><strong>Paris</strong></h2>
+      <p>Paris has been a forefront of fashion since the 17th century. Paris fashion week is one of the most prestigious events in the industry attracting designers, celebrities, what and media around the whole world. While I was visiting Paris, I wore my most “put together” looks.  What I noticed the most was that people like to dress with “understated elegance”. They don’t tend to wear super flashy outfits, but they really focus on the quality, fit, and fabric of them. People wear neutral colors and have tailored fits where everything fits perfectly and doesn’t look too big. Loafers, ballet flats, ankle boots, and sleek sneakers are very popular as well as accessories like elegant watches. All casual outfits are very polished but that is typically common around all of Europe.</p>
+  </div>
+</div>
+<hr>
+<!-- third row-->
+<div class="container">
+  <div class="photo">
+    <img src="barcelona.jpg" width= "150" alt="Photo of Barcelona">
+  </div>
+  <div class="text">
+      <h2><strong>Barcelona</strong></h2>
+      <p>Barcelona is a very vibrant culture with an artistic heritage. People tend to dress in a relaxed and stylish look prioritizing comfort over style often. They dress in more colorful clothes opposed to neutral colors embracing a mix of a traditional and modern look. They also tend to wear bold patterns and print. During the day, you typically see people wearing jeans, t-shirts, or casual dresses. People also wear lightweight jackets and scarves depending on the time of year. Comfortable walking shoes like sneakers and sandals are most desirable. During the nighttime people will dress up a bit more wearing stylish tops or dresses offering a more glamourous look.</p>
+  </div>
+</div>
+<hr>
+<!-- fourth row-->
+<div class="container">
+  <div class="photo">
+    <img src="prague.jpg" width="150" alt="Photo of Prague">
+  </div>
+  <div class="text">
+      <h2><strong>Prague</strong></h2>
+      <p>Prague’s blend of traditional eastern Europe and modern global trends reflect the style of how individuals dress there. It is also one of my favorite cities in the world! People like to dress more conservative creating a sophisticated look. During the day, people wear smart-casual outfits like jeans, t-shirts and sweaters, but nothing really revealing. It can get really cold there during winter seasons so I recommend wearing a stylish yet functional jacket like a trench coat. Hats and gloves are important to bring because not only do they keep you warm, but they serve as fashionable accessories and additions for outfits. There is still plenty of room for personal expression, but this recommendations will definitely help you feel more comfortable in Prague!</p>
+  </div>
+</div>
+<hr>
+<h2 class="new">Resources on Styling Clothes</h2>
+<style>
+  .new{text-align: center;}
+</style>
+<div class="video-container"></div>
+<iframe  src="https://www.youtube.com/embed/OjgqHrh8tMs?start=8"  height=340 width=560 title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/hoKDrFyQDy0?start=4" title="YouTube video player"  height=340 width=560 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </body>
 </html>
