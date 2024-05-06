@@ -38,6 +38,10 @@ nav a:hover {
     color: #001861;
 }
 
+nav div {
+    font-size: 22px;
+}
+
 @media only screen and (max-width: 800px) {
     a {display: block;} /* change links to block. that makes them take up full width */
     #navlinks {display: none;}
@@ -53,3 +57,45 @@ hr {
 a {
     color: #001861;
 }
+
+/* drop down menu defs */
+.dropbtn {
+    background-color: #ff748c;
+    color: white;
+    padding: 16px;
+    border: none;
+    font-family: "Slabo 27px", serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 22px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 22px;
+  }
+  
+  .dropdown-content a {
+    color: #001861;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ffffff;
+    color: #001861}
